@@ -3,16 +3,8 @@ param siteName string = 'sonarqube-${uniqueString(resourceGroup().id)}'
 
 @description('The version of the Sonarqube container image to use. Only recent versions of Sonarqube which uses the new variables prefix and can run, as development purposes, with Azure App Service Web App for Containers.')
 @allowed([
-  '10.5-community'
-  '10.4-community'
-  '10.3-community'
-  '10.2-community'
-  '10.1-community'
-  '10.0-community'
+  '10.7-community'
   '9.9-community'
-  '9.8-community'
-  '9.7-community'
-  '9.6-community'
   '8.9-community'
   'latest'
 ])
